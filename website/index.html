@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <title>My Cloud Resume</title>         
+        <link rel="stylesheet" href="resumestyle.css"> 
+    </head>     
+    <body>
+        <div class="container">
+            <h2>EVAN SIMMONS</h2>
+            <p><a href="mailto:evan.simmons248@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/evan-g-simmons">LinkedIn</a></p>
+            <h3>Summary</h3>
+            <p>IT Professional with experience in both Mac Systems Administration and Desktop/Network Support, looking to transition to a Cloud Administration role. Proven track record of implementing cloud-based management solutions and monitoring endpoint performance. Strong commitment to providing exceptional customer service and collaborating with cross-functional teams resulting in multiple successful projects and satisfied end-users.</p>
+            <h3>Technical Skillset</h3>
+            <p>Mac Systems Administration | Jamf Pro Configuration | Patch Management | Identity and Access Management | File Share Management | Endpoint Performance Monitoring | Encryption Key Management | Shell Scripting | Linux/UNIX CLI | Networking</p>
+            <h3>Experience</h3>
+            <p><b>Client Technologies Analyst II, Trinity Health; Livonia, MI &mdash; 2015-Present</b></p>
+            <p>Provides in-person and remote technical support for Trinity Health’s corporate office staff, including executive-level colleagues. Acting as a Mac Systems Administrator maintains the Jamf Pro management system for Macs across the enterprise. Other responsibilities include managing user accounts, performing endpoint performance monitoring, and file share administration.</p>
+            <p><b>Jamf Pro: Build and Implementation Project</b></p>
+            <ul>
+                <li>Creating policies and configuration profiles to manage devices to company security standards.</li>
+                <li>Packaging and deploying software to managed Macs, implementing shell scripts, and patch management for macOS and application updates.</li>
+                <li>Enforcing disk encryption key management via Jamf Pro.</li>
+                <li>Provides continuous support to end-users post-implementation as Mac Systems Administrator.</li>
+            </ul>
+            <p><b>Non-Standard Browser Remediation Project</b></p>
+            <ul>
+                <li>Tested websites in Internet Explorer compatibility mode, enterprise mode, and trusted sites mode to resolve issues with various work-related websites.</li>
+                <li>Removed Google Chrome and Firefox in our environment where possible to limit exposure to exploits posed by non-standard browsers.</li>
+            </ul>
+            <p><b>IS Help Desk Support I, Trinity Health; Livonia, MI &mdash; 2013-2015</b></p>
+            <p>Provided remote desktop support to individuals who work in a healthcare environment. Possessed an average First Call Resolution rate of over 80% and typically resolved issue calls within the first 7 minutes. Supported software issues relating to various systems, including cloud-hosted clinical applications and the Microsoft Office suite.</p>
+            <h3>Certifications and Education</h3>
+            <p>Amazon Web Services - Certified Cloud Practitioner, Solutions Architect Associate (In progress)</p>
+            <p>Jamf - Jamf Certified Tech</p>
+            <p>Oakland Community College - Computer Support Certification</p>
+            &nbsp;
+            <p>Page Views:
+            <span id="visitor_counter"/></p>
+        </div>
+    </body>
+    <script>
+        fetch('https://muao1uw37d.execute-api.us-east-2.amazonaws.com/prod')
+        .then(response => response.json())
+        .then((data) => {
+            document.getElementById('visitor_counter').innerText = data.Count
+        })
+    </script>
+</html>
