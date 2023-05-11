@@ -15,7 +15,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"
+      version = "4.66.1"
     }
   }
 }
@@ -61,5 +61,8 @@ resource "aws_lambda_function" "counter" {
   role    = "arn:aws:iam::715838961208:role/service-role/createDynamoDBTable-role-xvu8i9tt"
   runtime = "python3.10"
   filename = "lambda_function.zip"
+}
 
+resource "aws_s3_bucket" "host" {
+  bucket = "evan-crc-main"
 }
