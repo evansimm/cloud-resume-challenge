@@ -15,8 +15,10 @@ body {
 
 /* Container and Layout */
 #inner {
-    padding: 10px 80px;
-    margin: 80px auto;
+    width: 90%;  /* Adjust to your preferred width, or use a fixed width like 960px */
+    max-width: 960px; /* This could be any fixed width you want, like 960px for standard paper width */
+    padding: 10px 80px; /* You can adjust the padding as needed */
+    margin: 40px auto; /* This centers the container */
     background: white;
     border: 8px solid #666;
     border-width: 8px 0 2px 0;
