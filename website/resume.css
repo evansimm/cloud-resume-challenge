@@ -15,8 +15,10 @@ body {
 
 /* Container and Layout */
 #inner {
-    padding: 10px 80px;
-    margin: 80px auto;
+    width: 90%; /* Adjust to your preferred width */
+    max-width: 960px; /* This is typically the width of a standard sheet of paper */
+    margin: 40px auto; /* This centers your container on the page */
+    padding: 20px; /* Add padding as necessary */
     background: white;
     border: 8px solid #666;
     border-width: 8px 0 2px 0;
